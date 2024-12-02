@@ -29,7 +29,7 @@ def mtr_send_clk(number):
     if arduino is None or not arduino.is_open:
         msg = connect_arduino() 
     else:
-        msg = "[INFO] connect arduin qqo successe"
+        msg = "[INFO] connect arduino successe"
     
     if arduino is not None and isinstance(number, int):
         data = f"{number}\n"
