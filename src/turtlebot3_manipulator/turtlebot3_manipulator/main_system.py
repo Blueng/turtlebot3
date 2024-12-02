@@ -22,7 +22,7 @@ from PyQt5.QtWidgets import QDialog
 
 from PyQt5.QtWidgets import QVBoxLayout, QHBoxLayout, QPushButton, QCheckBox, QGraphicsScene, QGraphicsPixmapItem
 
-
+import datetime
 # interface
 from manipulator_interface.msg import LogMsg
 
@@ -159,12 +159,14 @@ class LogInWindow(QtWidgets.QMainWindow):
 # 로그 부분
 class RobotLogWindow(QtWidgets.QMainWindow):
     log_signal = QtCore.pyqtSignal(str)
+
     def __init__(self, node):
         super().__init__()
         self.ui = Ui_Robot_log()
         self.ui.setupUi(self)
         self.node = node
-        
+
+        # QoS 설정
         log_qos = QoSProfile(
             history=QoSHistoryPolicy.KEEP_LAST,
             depth=10,
@@ -172,52 +174,87 @@ class RobotLogWindow(QtWidgets.QMainWindow):
             durability=QoSDurabilityPolicy.TRANSIENT_LOCAL
         )
 
-        # log 받는 부분
+        # Log 메시지 구독
         self.system_log_subscriber = self.node.create_subscription(
             LogMsg,
             'system_logging',
             self.system_log_callback,
-            qos_profile=log_qos)
-        
+            qos_profile=log_qos
+        )
+
         # Signal 연결
         self.log_signal.connect(self.update_log)
+
         # 버튼 이벤트 연결
         self.ui.pushButton.clicked.connect(self.handle_send)
 
     def handle_send(self):
-        message = self.ui.textEdit.toPlainText()
-        email = self.ui.textEdit_2.toPlainText()
+        """사용자 입력을 이메일로 전송하는 버튼 이벤트 핸들러"""
+        user_message = self.ui.textEdit.toPlainText().strip()  # 사용자가 입력한 메시지
+        recipient_email = self.ui.textEdit_2.toPlainText().strip()  # 수신자 이메일 주소
 
-        if not email:
-            email = "네이버 메일"  # 기본 이메일 주소 설정
+        # 기본 이메일 주소 설정
+        if not recipient_email:
+            recipient_email = "example@naver.com"
 
+        # 이메일 본문 생성
+        email_body = (
+            f"사용자 메시지:\n"
+            f"{user_message}\n\n"
+            f"-- 시스템 로그 추가 --\n"
+            f"{self.ui.Log.toPlainText()}"  # UI에 표시된 모든 로그를 추가
+        )
+
+        # 이메일 전송 시도
         try:
-            self.send_email(email, message)
-            QtWidgets.QMessageBox.information(self, "전송 완료", f"메시지가 {email}로 전송되었습니다.")
-            self.close()  # 이메일 전송 성공 시 창 닫기
+            self.send_email(recipient_email, email_body)
+            QtWidgets.QMessageBox.information(self, "전송 완료", f"메시지가 {recipient_email}로 전송되었습니다.")
+            self.close()
         except Exception as e:
             QtWidgets.QMessageBox.critical(self, "전송 실패", f"이메일 전송 중 오류가 발생했습니다.\n{str(e)}")
 
     def system_log_callback(self, msg):
-        self.log_signal.emit(msg.log)
-        
+        """ROS Log 메시지를 처리하는 콜백 함수"""
+        log_message = msg.log
+        self.log_signal.emit(log_message)
+
+        # 특정 조건 만족 시 이메일로 로그 전송
+        if "ERROR" in log_message or "CRITICAL" in log_message:
+            try:
+                email_body = (
+                    f"자동 생성된 시스템 로그 알림:\n"
+                    f"Log Message: {log_message}\n"
+                    f"Timestamp: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n"
+                    f"-- 사용자 추가 메시지 --\n"
+                    f"{self.ui.textEdit.toPlainText()}"  # 사용자가 입력한 메시지를 포함
+                )
+                self.send_email("ycy1407@naver.com", email_body)
+            except Exception as e:
+                self.ui.Log.append(f"이메일 전송 실패: {str(e)}")
+
     def update_log(self, log_message):
+        """UI의 로그 표시 영역에 메시지 추가"""
         self.ui.Log.append(log_message)
 
-    # 이메일 전송 기능
     def send_email(self, recipient, message):
-        sender_email = "a01046997267@gmail.com"  # 발신자 이메일 주소 **주의** 무조건 gmail로 하기 https://jimmy-ai.tistory.com/451 설정 방법
-        sender_password = "leth fwdf bgeo erce"  # 발신자 이메일 비밀번호
+        """이메일 전송 기능"""
+        sender_email = "a01046997267@gmail.com"  # 발신자 이메일
+        sender_password = "leth fwdf bgeo erce"  # 발신자 앱 비밀번호
 
+        # 이메일 구성
         msg = MIMEText(message)
         msg['Subject'] = "로봇 시스템 에러 보고"
         msg['From'] = sender_email
         msg['To'] = recipient
 
-        with smtplib.SMTP('smtp.gmail.com', 587) as server:  # Gmail SMTP 서버 사용
-            server.starttls()
-            server.login(sender_email, sender_password)
-            server.sendmail(sender_email, recipient, msg.as_string())
+        # SMTP 서버를 통해 이메일 전송
+        try:
+            with smtplib.SMTP('smtp.gmail.com', 587) as server:
+                server.starttls()
+                server.login(sender_email, sender_password)
+                server.sendmail(sender_email, recipient, msg.as_string())
+        except smtplib.SMTPException as e:
+            raise RuntimeError(f"SMTP 오류 발생: {e}")
 
 # 메인 윈도우
 class MainWindow(QtWidgets.QMainWindow):
