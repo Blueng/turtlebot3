@@ -315,6 +315,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def handle_pause(self):
         self.node.get_logger().info("Pause 버튼 클릭 처리")
+        self.cvyr_class.send_pause_msg()
 
     def handle_reset(self):
         self.node.get_logger().info("Reset 버튼 클릭 처리")
