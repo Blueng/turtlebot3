@@ -1,0 +1,66 @@
+[0.152s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/yoonkangrok/Turtlebot3_Manipulator']
+[0.152s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/yoonkangrok/Turtlebot3_Manipulator'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x748d9baadba0>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x748d9baaca60>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x748d9baaca60>>)
+[0.394s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.394s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.394s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.394s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.394s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.395s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/yoonkangrok/Turtlebot3_Manipulator'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator) by extensions ['ignore', 'ignore_ament_install']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator) by extension 'ignore'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator) by extension 'ignore_ament_install'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator) by extensions ['colcon_pkg']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator) by extension 'colcon_pkg'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator) by extensions ['colcon_meta']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator) by extension 'colcon_meta'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator) by extensions ['ros']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator) by extension 'ros'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator) by extensions ['cmake', 'python']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator) by extension 'cmake'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator) by extension 'python'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator) by extensions ['python_setup_py']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator) by extension 'python_setup_py'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/build) by extensions ['ignore', 'ignore_ament_install']
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/build) by extension 'ignore'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/build) ignored
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/install) by extensions ['ignore', 'ignore_ament_install']
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/install) by extension 'ignore'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/install) ignored
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/log) by extensions ['ignore', 'ignore_ament_install']
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/log) by extension 'ignore'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/log) ignored
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src) by extensions ['ignore', 'ignore_ament_install']
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src) by extension 'ignore'
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src) by extension 'ignore_ament_install'
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src) by extensions ['colcon_pkg']
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src) by extension 'colcon_pkg'
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src) by extensions ['colcon_meta']
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src) by extension 'colcon_meta'
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src) by extensions ['ros']
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src) by extension 'ros'
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src) by extensions ['cmake', 'python']
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src) by extension 'cmake'
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src) by extension 'python'
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src) by extensions ['python_setup_py']
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src) by extension 'python_setup_py'
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src/manipulator_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src/manipulator_interface) by extension 'ignore'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src/manipulator_interface) by extension 'ignore_ament_install'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src/manipulator_interface) by extensions ['colcon_pkg']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src/manipulator_interface) by extension 'colcon_pkg'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src/manipulator_interface) by extensions ['colcon_meta']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src/manipulator_interface) by extension 'colcon_meta'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src/manipulator_interface) by extensions ['ros']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src/manipulator_interface) by extension 'ros'
+[0.419s] DEBUG:colcon.colcon_core.package_identification:Package '/home/yoonkangrok/Turtlebot3_Manipulator/src/manipulator_interface' with type 'ros.ament_cmake' and name 'manipulator_interface'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src/turtlebot3_manipulator) by extensions ['ignore', 'ignore_ament_install']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src/turtlebot3_manipulator) by extension 'ignore'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src/turtlebot3_manipulator) by extension 'ignore_ament_install'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src/turtlebot3_manipulator) by extensions ['colcon_pkg']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src/turtlebot3_manipulator) by extension 'colcon_pkg'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src/turtlebot3_manipulator) by extensions ['colcon_meta']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src/turtlebot3_manipulator) by extension 'colcon_meta'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src/turtlebot3_manipulator) by extensions ['ros']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yoonkangrok/Turtlebot3_Manipulator/src/turtlebot3_manipulator) by extension 'ros'
+[0.421s] DEBUG:colcon.colcon_core.package_identification:Package '/home/yoonkangrok/Turtlebot3_Manipulator/src/turtlebot3_manipulator' with type 'ros.ament_python' and name 'turtlebot3_manipulator'
+[0.421s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

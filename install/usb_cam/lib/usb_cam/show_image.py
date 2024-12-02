@@ -1,0 +1,1 @@
+/home/yoonkangrok/Turtlebot3_Manipulator/src/usb_cam/scripts/show_image.py

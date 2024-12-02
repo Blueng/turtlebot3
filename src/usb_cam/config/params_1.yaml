@@ -1,0 +1,73 @@
+# /**:
+#     ros__parameters:
+#       video_device: "/dev/video0"
+#       framerate: 30.0
+#       io_method: "mmap"
+#       frame_id: "camera"
+#       pixel_format: "mjpeg2rgb"  # see usb_cam/supported_formats for list of supported formats
+#       av_device_format: "YUV422P"
+#       image_width: 640
+#       image_height: 480
+#       camera_name: "test_camera1"
+#       camera_info_url: "package://usb_cam/config/camera_info.yaml"
+#       brightness: -1
+#       contrast: -1
+#       saturation: -1
+#       sharpness: -1
+#       gain: -1
+#       auto_white_balance: true
+#       white_balance: 4000
+#       autoexposure: true
+#       exposure: 100
+#       autofocus: false
+#       focus: -1
+
+
+/**:
+    ros__parameters:
+      video_device: "/dev/video0"
+      framerate: 30.0
+      io_method: "mmap"
+      frame_id: "camera"
+      pixel_format: "mjpeg"  # MJPEG 포맷을 사용
+      av_device_format: "YUV422P"
+      image_width: 640
+      image_height: 480
+      camera_name: "test_camera1"
+      camera_info_url: "package://usb_cam/config/camera_info.yaml"
+      brightness: -1
+      contrast: -1
+      saturation: -1
+      sharpness: -1
+      gain: -1
+      auto_white_balance: true
+      white_balance: 4000
+      autoexposure: true
+      exposure: 100
+      autofocus: false
+      focus: -1
+
+
+# /**:
+#     ros__parameters:
+#       video_device: "/dev/video0"
+#       framerate: 30.0
+#       io_method: "mmap"
+#       frame_id: "camera"
+#       pixel_format: "mjpeg2rgb  # 카메라에서 지원되는 포맷으로 변경
+#       av_device_format: "YUV422P"
+#       image_width: 640
+#       image_height: 480
+#       camera_name: "test_camera1"
+#       camera_info_url: "package://usb_cam/config/camera_info.yaml"
+#       brightness: -1
+#       contrast: -1
+#       saturation: -1
+#       sharpness: -1
+#       gain: -1
+#       auto_white_balance: true
+#       white_balance: 4000
+#       autoexposure: true
+#       exposure: 100
+#       autofocus: false
+#       focus: -1

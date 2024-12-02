@@ -1,0 +1,19 @@
+[0.490s] Invoking command in '/home/yoonkangrok/Turtlebot3_Manipulator/build/turtlebot3_manipulator': AMENT_PREFIX_PATH=/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface LD_LIBRARY_PATH=/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yoonkangrok/Turtlebot3_Manipulator/build/turtlebot3_manipulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/lib/python3.10/site-packages:/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yoonkangrok/Turtlebot3_Manipulator/build/turtlebot3_manipulator/build --no-deps symlink_data
+[0.679s] running develop
+[0.679s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.680s]   warnings.warn(
+[0.822s] running egg_info
+[0.823s] writing turtlebot3_manipulator.egg-info/PKG-INFO
+[0.823s] writing dependency_links to turtlebot3_manipulator.egg-info/dependency_links.txt
+[0.823s] writing entry points to turtlebot3_manipulator.egg-info/entry_points.txt
+[0.823s] writing requirements to turtlebot3_manipulator.egg-info/requires.txt
+[0.823s] writing top-level names to turtlebot3_manipulator.egg-info/top_level.txt
+[0.825s] reading manifest file 'turtlebot3_manipulator.egg-info/SOURCES.txt'
+[0.825s] writing manifest file 'turtlebot3_manipulator.egg-info/SOURCES.txt'
+[0.826s] running build_ext
+[0.826s] Creating /home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/lib/python3.10/site-packages/turtlebot3-manipulator.egg-link (link to .)
+[0.827s] Installing main_system script to /home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/lib/turtlebot3_manipulator
+[0.827s] 
+[0.827s] Installed /home/yoonkangrok/Turtlebot3_Manipulator/build/turtlebot3_manipulator
+[0.827s] running symlink_data
+[0.855s] Invoked command in '/home/yoonkangrok/Turtlebot3_Manipulator/build/turtlebot3_manipulator' returned '0': AMENT_PREFIX_PATH=/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface LD_LIBRARY_PATH=/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yoonkangrok/Turtlebot3_Manipulator/build/turtlebot3_manipulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/lib/python3.10/site-packages:/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yoonkangrok/Turtlebot3_Manipulator/build/turtlebot3_manipulator/build --no-deps symlink_data

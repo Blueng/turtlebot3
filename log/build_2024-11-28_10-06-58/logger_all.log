@@ -1,0 +1,275 @@
+[0.127s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.127s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f8c0a1a4d30>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f8c0a1a48b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f8c0a1a48b0>>)
+[0.265s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.265s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.265s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.265s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.265s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.265s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.265s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/yoonkangrok/Turtlebot3_Manipulator'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.274s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_interface) by extension 'ignore'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_interface) by extension 'ignore_ament_install'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_interface) by extensions ['colcon_pkg']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_interface) by extension 'colcon_pkg'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_interface) by extensions ['colcon_meta']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_interface) by extension 'colcon_meta'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_interface) by extensions ['ros']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/manipulator_interface) by extension 'ros'
+[0.277s] DEBUG:colcon.colcon_core.package_identification:Package 'src/manipulator_interface' with type 'ros.ament_cmake' and name 'manipulator_interface'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulator) by extensions ['ignore', 'ignore_ament_install']
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulator) by extension 'ignore'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulator) by extension 'ignore_ament_install'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulator) by extensions ['colcon_pkg']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulator) by extension 'colcon_pkg'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulator) by extensions ['colcon_meta']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulator) by extension 'colcon_meta'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulator) by extensions ['ros']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_manipulator) by extension 'ros'
+[0.278s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_manipulator' with type 'ros.ament_python' and name 'turtlebot3_manipulator'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['ignore', 'ignore_ament_install']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ignore'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ignore_ament_install'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['colcon_pkg']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'colcon_pkg'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['colcon_meta']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'colcon_meta'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['ros']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ros'
+[0.283s] DEBUG:colcon.colcon_core.package_identification:Package 'src/usb_cam' with type 'ros.ament_cmake' and name 'usb_cam'
+[0.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.297s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.297s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.298s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/yoonkangrok/Turtlebot3_Manipulator/install
+[0.300s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 350 installed packages in /opt/ros/humble
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'manipulator_interface' build argument 'cmake_args' from command line to 'None'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'manipulator_interface' build argument 'cmake_target' from command line to 'None'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'manipulator_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'manipulator_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'manipulator_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'manipulator_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'manipulator_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'manipulator_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.368s] Level 5:colcon.colcon_core.verb:set package 'manipulator_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.368s] DEBUG:colcon.colcon_core.verb:Building package 'manipulator_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yoonkangrok/Turtlebot3_Manipulator/build/manipulator_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface', 'merge_install': False, 'path': '/home/yoonkangrok/Turtlebot3_Manipulator/src/manipulator_interface', 'symlink_install': True, 'test_result_base': None}
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_args' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_target' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_clean_cache' from command line to 'False'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_clean_first' from command line to 'False'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_force_configure' from command line to 'False'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'ament_cmake_args' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'catkin_cmake_args' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.369s] DEBUG:colcon.colcon_core.verb:Building package 'usb_cam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yoonkangrok/Turtlebot3_Manipulator/build/usb_cam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam', 'merge_install': False, 'path': '/home/yoonkangrok/Turtlebot3_Manipulator/src/usb_cam', 'symlink_install': True, 'test_result_base': None}
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulator' build argument 'cmake_args' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulator' build argument 'cmake_target' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulator' build argument 'cmake_clean_first' from command line to 'False'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulator' build argument 'cmake_force_configure' from command line to 'False'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulator' build argument 'ament_cmake_args' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.369s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_manipulator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.369s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_manipulator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yoonkangrok/Turtlebot3_Manipulator/build/turtlebot3_manipulator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator', 'merge_install': False, 'path': '/home/yoonkangrok/Turtlebot3_Manipulator/src/turtlebot3_manipulator', 'symlink_install': True, 'test_result_base': None}
+[0.369s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.370s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.370s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yoonkangrok/Turtlebot3_Manipulator/src/manipulator_interface' with build type 'ament_cmake'
+[0.370s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yoonkangrok/Turtlebot3_Manipulator/src/manipulator_interface'
+[0.372s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.372s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.372s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.375s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yoonkangrok/Turtlebot3_Manipulator/src/usb_cam' with build type 'ament_cmake'
+[0.375s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yoonkangrok/Turtlebot3_Manipulator/src/usb_cam'
+[0.375s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.375s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.381s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yoonkangrok/Turtlebot3_Manipulator/build/manipulator_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator:/opt/ros/humble /usr/bin/cmake --build /home/yoonkangrok/Turtlebot3_Manipulator/build/manipulator_interface -- -j8 -l8
+[0.384s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yoonkangrok/Turtlebot3_Manipulator/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator:/opt/ros/humble /usr/bin/cmake --build /home/yoonkangrok/Turtlebot3_Manipulator/build/usb_cam -- -j8 -l8
+[0.713s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yoonkangrok/Turtlebot3_Manipulator/build/manipulator_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator:/opt/ros/humble /usr/bin/cmake --build /home/yoonkangrok/Turtlebot3_Manipulator/build/manipulator_interface -- -j8 -l8
+[0.784s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yoonkangrok/Turtlebot3_Manipulator/build/manipulator_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator:/opt/ros/humble /usr/bin/cmake --install /home/yoonkangrok/Turtlebot3_Manipulator/build/manipulator_interface
+[0.837s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator_interface)
+[0.838s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yoonkangrok/Turtlebot3_Manipulator/build/manipulator_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator:/opt/ros/humble /usr/bin/cmake --install /home/yoonkangrok/Turtlebot3_Manipulator/build/manipulator_interface
+[0.840s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface' for CMake module files
+[0.841s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface' for CMake config files
+[0.842s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_interface', 'cmake_prefix_path')
+[0.842s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/hook/cmake_prefix_path.ps1'
+[0.843s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/hook/cmake_prefix_path.dsv'
+[0.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/hook/cmake_prefix_path.sh'
+[0.844s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/lib'
+[0.844s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_interface', 'ld_library_path_lib')
+[0.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/hook/ld_library_path_lib.ps1'
+[0.845s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/hook/ld_library_path_lib.dsv'
+[0.845s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/hook/ld_library_path_lib.sh'
+[0.845s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/bin'
+[0.845s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/lib/pkgconfig/manipulator_interface.pc'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/lib/python3.10/site-packages'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/bin'
+[0.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/package.ps1'
+[0.847s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/package.dsv'
+[0.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/package.sh'
+[0.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/package.bash'
+[0.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/package.zsh'
+[0.849s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/colcon-core/packages/manipulator_interface)
+[0.892s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manipulator_interface)
+[0.893s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface' for CMake module files
+[0.893s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface' for CMake config files
+[0.894s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_interface', 'cmake_prefix_path')
+[0.894s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/hook/cmake_prefix_path.ps1'
+[0.894s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/hook/cmake_prefix_path.dsv'
+[0.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/hook/cmake_prefix_path.sh'
+[0.895s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/lib'
+[0.895s] Level 1:colcon.colcon_core.shell:create_environment_hook('manipulator_interface', 'ld_library_path_lib')
+[0.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/hook/ld_library_path_lib.ps1'
+[0.896s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/hook/ld_library_path_lib.dsv'
+[0.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/hook/ld_library_path_lib.sh'
+[0.896s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/bin'
+[0.896s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/lib/pkgconfig/manipulator_interface.pc'
+[0.896s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/lib/python3.10/site-packages'
+[0.896s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/bin'
+[0.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/package.ps1'
+[0.897s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/package.dsv'
+[0.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/package.sh'
+[0.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/package.bash'
+[0.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/manipulator_interface/package.zsh'
+[0.898s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/share/colcon-core/packages/manipulator_interface)
+[0.898s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yoonkangrok/Turtlebot3_Manipulator/src/turtlebot3_manipulator' with build type 'ament_python'
+[0.898s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulator', 'ament_prefix_path')
+[0.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/share/turtlebot3_manipulator/hook/ament_prefix_path.ps1'
+[0.899s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/share/turtlebot3_manipulator/hook/ament_prefix_path.dsv'
+[0.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/share/turtlebot3_manipulator/hook/ament_prefix_path.sh'
+[0.900s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.900s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.113s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yoonkangrok/Turtlebot3_Manipulator/src/turtlebot3_manipulator'
+[1.114s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.114s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.429s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yoonkangrok/Turtlebot3_Manipulator/build/turtlebot3_manipulator': CMAKE_PREFIX_PATH=/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface:/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam LD_LIBRARY_PATH=/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/lib:/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/yoonkangrok/Turtlebot3_Manipulator/build/turtlebot3_manipulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yoonkangrok/Turtlebot3_Manipulator/build/turtlebot3_manipulator/build --no-deps symlink_data
+[2.049s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulator', 'pythonpath_develop')
+[2.049s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/build/turtlebot3_manipulator/share/turtlebot3_manipulator/hook/pythonpath_develop.ps1'
+[2.050s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yoonkangrok/Turtlebot3_Manipulator/build/turtlebot3_manipulator' returned '0': CMAKE_PREFIX_PATH=/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface:/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam LD_LIBRARY_PATH=/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/lib:/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/yoonkangrok/Turtlebot3_Manipulator/build/turtlebot3_manipulator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yoonkangrok/Turtlebot3_Manipulator/build/turtlebot3_manipulator/build --no-deps symlink_data
+[2.050s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yoonkangrok/Turtlebot3_Manipulator/build/turtlebot3_manipulator/share/turtlebot3_manipulator/hook/pythonpath_develop.dsv'
+[2.050s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/build/turtlebot3_manipulator/share/turtlebot3_manipulator/hook/pythonpath_develop.sh'
+[2.050s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator' for CMake module files
+[2.051s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator' for CMake config files
+[2.051s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/lib'
+[2.051s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/bin'
+[2.051s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/lib/pkgconfig/turtlebot3_manipulator.pc'
+[2.051s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/lib/python3.10/site-packages'
+[2.051s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_manipulator', 'pythonpath')
+[2.052s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/share/turtlebot3_manipulator/hook/pythonpath.ps1'
+[2.052s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/share/turtlebot3_manipulator/hook/pythonpath.dsv'
+[2.052s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/share/turtlebot3_manipulator/hook/pythonpath.sh'
+[2.052s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/bin'
+[2.052s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_manipulator)
+[2.053s] INFO:colcon.colcon_core.shell:Creating package script '/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/share/turtlebot3_manipulator/package.ps1'
+[2.053s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/share/turtlebot3_manipulator/package.dsv'
+[2.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/share/turtlebot3_manipulator/package.sh'
+[2.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/share/turtlebot3_manipulator/package.bash'
+[2.055s] INFO:colcon.colcon_core.shell:Creating package script '/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/share/turtlebot3_manipulator/package.zsh'
+[2.055s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/share/colcon-core/packages/turtlebot3_manipulator)
+[7.271s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yoonkangrok/Turtlebot3_Manipulator/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator:/opt/ros/humble /usr/bin/cmake --build /home/yoonkangrok/Turtlebot3_Manipulator/build/usb_cam -- -j8 -l8
+[7.302s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yoonkangrok/Turtlebot3_Manipulator/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator:/opt/ros/humble /usr/bin/cmake --install /home/yoonkangrok/Turtlebot3_Manipulator/build/usb_cam
+[7.322s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(usb_cam)
+[7.322s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam' for CMake module files
+[7.323s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yoonkangrok/Turtlebot3_Manipulator/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator:/opt/ros/humble /usr/bin/cmake --install /home/yoonkangrok/Turtlebot3_Manipulator/build/usb_cam
+[7.323s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam' for CMake config files
+[7.324s] Level 1:colcon.colcon_core.shell:create_environment_hook('usb_cam', 'cmake_prefix_path')
+[7.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.ps1'
+[7.324s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.dsv'
+[7.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.sh'
+[7.325s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/lib'
+[7.325s] Level 1:colcon.colcon_core.shell:create_environment_hook('usb_cam', 'ld_library_path_lib')
+[7.325s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.ps1'
+[7.325s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.dsv'
+[7.325s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.sh'
+[7.325s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/bin'
+[7.325s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/lib/pkgconfig/usb_cam.pc'
+[7.326s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/lib/python3.10/site-packages'
+[7.326s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/bin'
+[7.326s] INFO:colcon.colcon_core.shell:Creating package script '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/package.ps1'
+[7.326s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/package.dsv'
+[7.327s] INFO:colcon.colcon_core.shell:Creating package script '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/package.sh'
+[7.327s] INFO:colcon.colcon_core.shell:Creating package script '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/package.bash'
+[7.327s] INFO:colcon.colcon_core.shell:Creating package script '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/package.zsh'
+[7.327s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/colcon-core/packages/usb_cam)
+[7.357s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(usb_cam)
+[7.358s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam' for CMake module files
+[7.358s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam' for CMake config files
+[7.358s] Level 1:colcon.colcon_core.shell:create_environment_hook('usb_cam', 'cmake_prefix_path')
+[7.358s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.ps1'
+[7.359s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.dsv'
+[7.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.sh'
+[7.359s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/lib'
+[7.359s] Level 1:colcon.colcon_core.shell:create_environment_hook('usb_cam', 'ld_library_path_lib')
+[7.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.ps1'
+[7.360s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.dsv'
+[7.360s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.sh'
+[7.360s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/bin'
+[7.360s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/lib/pkgconfig/usb_cam.pc'
+[7.360s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/lib/python3.10/site-packages'
+[7.360s] Level 1:colcon.colcon_core.environment:checking '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/bin'
+[7.361s] INFO:colcon.colcon_core.shell:Creating package script '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/package.ps1'
+[7.361s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/package.dsv'
+[7.361s] INFO:colcon.colcon_core.shell:Creating package script '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/package.sh'
+[7.361s] INFO:colcon.colcon_core.shell:Creating package script '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/package.bash'
+[7.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/usb_cam/package.zsh'
+[7.362s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yoonkangrok/Turtlebot3_Manipulator/install/usb_cam/share/colcon-core/packages/usb_cam)
+[7.362s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.362s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.362s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.362s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.367s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.368s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.368s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.379s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.379s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yoonkangrok/Turtlebot3_Manipulator/install/local_setup.ps1'
+[7.380s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yoonkangrok/Turtlebot3_Manipulator/install/_local_setup_util_ps1.py'
+[7.381s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yoonkangrok/Turtlebot3_Manipulator/install/setup.ps1'
+[7.382s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yoonkangrok/Turtlebot3_Manipulator/install/local_setup.sh'
+[7.382s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yoonkangrok/Turtlebot3_Manipulator/install/_local_setup_util_sh.py'
+[7.383s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yoonkangrok/Turtlebot3_Manipulator/install/setup.sh'
+[7.383s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yoonkangrok/Turtlebot3_Manipulator/install/local_setup.bash'
+[7.384s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yoonkangrok/Turtlebot3_Manipulator/install/setup.bash'
+[7.384s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yoonkangrok/Turtlebot3_Manipulator/install/local_setup.zsh'
+[7.385s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yoonkangrok/Turtlebot3_Manipulator/install/setup.zsh'

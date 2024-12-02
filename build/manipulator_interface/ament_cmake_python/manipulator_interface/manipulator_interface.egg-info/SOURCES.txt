@@ -1,0 +1,8 @@
+setup.py
+manipulator_interface/__init__.py
+manipulator_interface.egg-info/PKG-INFO
+manipulator_interface.egg-info/SOURCES.txt
+manipulator_interface.egg-info/dependency_links.txt
+manipulator_interface.egg-info/top_level.txt
+manipulator_interface/msg/__init__.py
+manipulator_interface/msg/_log_msg.py

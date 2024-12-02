@@ -1,0 +1,16 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/yoonkangrok/Turtlebot3_Manipulator/build/turtlebot3_manipulator",
+        "/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/lib/python3.10/site-packages",
+        "/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/yoonkangrok/Turtlebot3_Manipulator/build/turtlebot3_manipulator",
+        "/home/yoonkangrok/Turtlebot3_Manipulator/install/turtlebot3_manipulator/lib/python3.10/site-packages",
+        "/home/yoonkangrok/Turtlebot3_Manipulator/install/manipulator_interface/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

@@ -1,0 +1,6 @@
+{
+  "package_name": "manipulator_interface",
+  "non_idl_tuples": [
+    "/home/yoonkangrok/Turtlebot3_Manipulator/src/manipulator_interface:msg/LogMsg.msg"
+  ]
+}
