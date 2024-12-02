@@ -83,7 +83,7 @@ class MainSystem(Node, QObject):
         )
 
         # usb_cam(wild view)
-        self.create_subscription(Image, '/image_raw', self.image_callback, 10)
+        #self.create_subscription(Image, '/image_raw', self.image_callback, 10)
         self.log_pub = self.create_publisher(LogMsg, 'system_logging', qos_profile=log_qos)
         self.cvyr_ctrl_pub = self.create_publisher(CvyrMsg, 'cvyr_ctrl', 10)
 
@@ -276,7 +276,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.cvyr_class = MtrCtrl(self.node)
 
 
-
+        
         # usb_cam(wild view)
         self.ui.top_view  # QGraphicsView 객체입니다.
         self.top_view_scene = QGraphicsScene()  # QGraphicsScene 생성
@@ -543,6 +543,7 @@ class MtrCtrl(QDialog):
         self.cvyr_len = len
 
     def send_on_msg(self):
+        print("pubbb")
         try:
             # CvyrMsg의 인스턴스 생성
             msg = CvyrMsg()

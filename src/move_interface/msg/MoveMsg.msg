@@ -1,0 +1,2 @@
+float64 aruco_x
+float64 aruco_y
